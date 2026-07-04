@@ -43,7 +43,7 @@
   /* -------------------------------------------------
      3. Active tab highlighting (nav bar itself always stays visible)
   ------------------------------------------------- */
-  var sections = document.querySelectorAll("#sinopsis, #productores, #capitulos, #juego, #enlaces");
+  var sections = document.querySelectorAll("#sinopsis, #productores, #capitulos, #audiovisuales, #juego, #enlaces");
   var tabLinks = document.querySelectorAll(".tab");
 
   var navObserver = new IntersectionObserver(function (entries) {
@@ -62,7 +62,7 @@
   /* -------------------------------------------------
      4. Scroll reveal for doc sheet / crew cards / tapes
   ------------------------------------------------- */
-  var revealTargets = document.querySelectorAll(".doc-sheet, .crew-card, .tape-card, .links-card");
+  var revealTargets = document.querySelectorAll(".doc-sheet, .crew-card, .tape-card, .audio-card, .links-card");
 
   var revealObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
